@@ -8,6 +8,7 @@ func NewLoggerOtherWay() LoggerStruct {
 
 type LoggerStruct struct {}
 
-func (l LoggerStruct) Log(s string) {
+func (l LoggerStruct) Log(s string, data string) {
 	fmt.Println(s)
+	fmt.Println(data)
 }

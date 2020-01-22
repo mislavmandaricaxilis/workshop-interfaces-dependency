@@ -7,11 +7,12 @@ func NewLoggerOneWay() LoggerInterface {
 }
 
 type LoggerInterface interface {
-	Log(s string)
+	Log(s string, data string)
 }
 
 type loggerImplementation struct {}
 
-func (l loggerImplementation) Log(s string) {
+func (l loggerImplementation) Log(s string, data string) {
 	fmt.Println(s)
+	fmt.Println(data)
 }
